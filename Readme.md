@@ -11,7 +11,7 @@ pip install -r requirements.txt
 2. Specify the PDF link and OPEN_API_KEY to create the embedding model
 ```
 # Example
-python ingest.py --pdf_path "my_pdf.pdf" --OPEN_API_KEY "mention_your_key"
+python ingest.py --pdf_path "my_pdf.pdf" 
 ```
 The following options can also be specified as arguments
 - chunk_size:
