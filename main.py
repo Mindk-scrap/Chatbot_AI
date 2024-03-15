@@ -27,7 +27,7 @@ def get_answer():
 
 def parse_args_from_request(request_data):
     # Parse the open_api_key and faiss_save_path from the request JSON
-    open_api_key = '**-*****************************'
+    os.environ["OPENAI_API_KEY"] = args.OPEN_API_KEY
     faiss_save_path = 'faiss_index'
     
     return argparse.Namespace(
