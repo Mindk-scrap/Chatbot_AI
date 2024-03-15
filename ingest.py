@@ -60,7 +60,6 @@ def main(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--OPEN_API_KEY", type=str, default="********************************")
     parser.add_argument("--chunk_size", type=int, default=1000, help="Please specify the chunk_size for CharacterTextSplitter within a number less than or equal to 4096.")
     parser.add_argument("--chunk_overlap", type=int, default=200, help="Please specify the chunk_overlap for CharacterTextSplitter within a number less than or equal to 4096.")
     parser.add_argument("--pdf_path", type=str, default="", help="Please specify the path of the pdf to be read.")
@@ -72,4 +71,4 @@ if __name__ == "__main__":
 
 
 
-# python make_emb.py --pdf_path "Aurelius_1464_LFeBk.pdf" --OPEN_API_KEY "*************************************"
+# python make_emb.py --pdf_path "Aurelius_1464_LFeBk.pdf"
